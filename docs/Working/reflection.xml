@@ -1,0 +1,1981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection>
+  <assemblies>
+    <assembly name="DotNetExtras.Testing">
+      <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCompanyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Alek Davis</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Debug</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>© 2025 Alek Davis</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyDescriptionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>A .NET Core library implementing helper functions for unit testing and validation based on xUnit.</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.0.0</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyInformationalVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.0</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyProductAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>DotNetExtras.Testing</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTitleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>DotNetExtras.Testing</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyMetadataAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>RepositoryUrl</value>
+          </argument>
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>https://github.com/alekdavis/dotnet-extras-testing</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="N:DotNetExtras.Testing.Assertions">
+      <topicdata group="api" />
+      <apidata name="DotNetExtras.Testing.Assertions" group="namespace" />
+      <elements>
+        <element api="T:DotNetExtras.Testing.Assertions.Must" />
+        <element api="T:DotNetExtras.Testing.Assertions.MustExtensions" />
+      </elements>
+      <file name="N_DotNetExtras_Testing_Assertions" />
+    </api>
+    <api id="T:DotNetExtras.Testing.Assertions.Must">
+      <topicdata group="api" />
+      <apidata name="Must" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeFalse" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThan``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThanOrEqual``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeLessThan``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeLessThanOrEqual``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeNull" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeNullOrEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeOfType``1(System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeTrue" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.Contain">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Contain``1(``0,System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Contain(System.String,System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.ContainAll">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.ContainAny">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.EndWith(System.String,System.Boolean)" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.Equal">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Equal``1(``0)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Equal(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Equal(System.String,System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Match(System.String,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeNull" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeNullOrEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeOfType``1(System.Boolean)" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotContain">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContain``1(``0,System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContain(System.String,System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAll">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAny">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotEndWith(System.String,System.Boolean)" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotEqual">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual``1(``0)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.String,System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotMatch(System.String,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotStartWith(System.String,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.StartWith(System.String,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+      </containers>
+      <file name="T_DotNetExtras_Testing_Assertions_Must" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Testing.Assertions.Must">
+      <topicdata name="Must" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Testing.Assertions.Must" />
+      <apidata name="Must" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeFalse" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThan``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThanOrEqual``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeLessThan``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeLessThanOrEqual``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeNull" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeNullOrEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeOfType``1(System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.BeTrue" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.Contain">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Contain``1(``0,System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Contain(System.String,System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.ContainAll">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.ContainAny">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.EndWith(System.String,System.Boolean)" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.Equal">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Equal``1(``0)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Equal(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.Equal(System.String,System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Match(System.String,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeNull" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeNullOrEmpty" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotBeOfType``1(System.Boolean)" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotContain">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContain``1(``0,System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContain(System.String,System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAll">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAny">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotEndWith(System.String,System.Boolean)" />
+        <element api="Overload:DotNetExtras.Testing.Assertions.Must.NotEqual">
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual``1(``0)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+          <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.String,System.Boolean)" />
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotMatch(System.String,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotStartWith(System.String,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.StartWith(System.String,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Testing_Assertions_Must" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.Contain">
+      <topicdata name="Contain" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="Contain" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Contain``1(``0,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Contain(System.String,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_Contain" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.ContainAll">
+      <topicdata name="ContainAll" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="ContainAll" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_ContainAll" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.ContainAny">
+      <topicdata name="ContainAny" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="ContainAny" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.ContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_ContainAny" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.Equal">
+      <topicdata name="Equal" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="Equal" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Equal``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Equal(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.Equal(System.String,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_Equal" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.NotContain">
+      <topicdata name="NotContain" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="NotContain" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotContain``1(``0,System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotContain(System.String,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_NotContain" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAll">
+      <topicdata name="NotContainAll" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="NotContainAll" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_NotContainAll" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAny">
+      <topicdata name="NotContainAny" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="NotContainAny" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_NotContainAny" />
+    </api>
+    <api id="Overload:DotNetExtras.Testing.Assertions.Must.NotEqual">
+      <topicdata name="NotEqual" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="NotEqual" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual``1(``0)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+        <element api="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.String,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Testing_Assertions_Must_NotEqual" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeEmpty">
+      <topicdata group="api" />
+      <apidata name="BeEmpty" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeEmpty" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeFalse">
+      <topicdata group="api" />
+      <apidata name="BeFalse" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeFalse" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThan``1(``0)">
+      <topicdata group="api" />
+      <apidata name="BeGreaterThan" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T">
+          <constrained>
+            <type api="T:System.Object" ref="true" />
+            <implements>
+              <type api="T:System.IComparable`1" ref="true">
+                <specialization>
+                  <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThan``1(``0)" />
+                </specialization>
+              </type>
+            </implements>
+          </constrained>
+        </template>
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThan``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeGreaterThan__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThanOrEqual``1(``0)">
+      <topicdata group="api" />
+      <apidata name="BeGreaterThanOrEqual" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T">
+          <constrained>
+            <type api="T:System.Object" ref="true" />
+            <implements>
+              <type api="T:System.IComparable`1" ref="true">
+                <specialization>
+                  <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThanOrEqual``1(``0)" />
+                </specialization>
+              </type>
+            </implements>
+          </constrained>
+        </template>
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeGreaterThanOrEqual``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeGreaterThanOrEqual__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeLessThan``1(``0)">
+      <topicdata group="api" />
+      <apidata name="BeLessThan" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T">
+          <constrained>
+            <type api="T:System.Object" ref="true" />
+            <implements>
+              <type api="T:System.IComparable`1" ref="true">
+                <specialization>
+                  <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeLessThan``1(``0)" />
+                </specialization>
+              </type>
+            </implements>
+          </constrained>
+        </template>
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeLessThan``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeLessThan__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeLessThanOrEqual``1(``0)">
+      <topicdata group="api" />
+      <apidata name="BeLessThanOrEqual" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T">
+          <constrained>
+            <type api="T:System.Object" ref="true" />
+            <implements>
+              <type api="T:System.IComparable`1" ref="true">
+                <specialization>
+                  <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeLessThanOrEqual``1(``0)" />
+                </specialization>
+              </type>
+            </implements>
+          </constrained>
+        </template>
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.BeLessThanOrEqual``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeLessThanOrEqual__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeNull">
+      <topicdata group="api" />
+      <apidata name="BeNull" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeNull" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeNullOrEmpty">
+      <topicdata group="api" />
+      <apidata name="BeNullOrEmpty" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeNullOrEmpty" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeOfType``1(System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="BeOfType" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="strict" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeOfType__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.BeTrue">
+      <topicdata group="api" />
+      <apidata name="BeTrue" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_BeTrue" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.Contain(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="Contain" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.Contain" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_Contain" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.Contain``1(``0,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="Contain" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.Contain" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.Contain``1(``0,System.Boolean)" />
+        </parameter>
+        <parameter name="partial" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_Contain__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.ContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="ContainAll" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.ContainAll" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_ContainAll" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.ContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="ContainAll" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.ContainAll" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.ContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="partial" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_ContainAll__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.ContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="ContainAny" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.ContainAny" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_ContainAny" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.ContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="ContainAny" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.ContainAny" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.ContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="partial" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_ContainAny__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.EndWith(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="EndWith" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_EndWith" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.Equal(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="Equal" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.Equal" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_Equal" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.Equal(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="Equal" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.Equal" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_Equal_1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.Equal``1(``0)">
+      <topicdata group="api" />
+      <apidata name="Equal" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.Equal" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.Equal``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_Equal__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.Match(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="Match" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_Match" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotBeEmpty">
+      <topicdata group="api" />
+      <apidata name="NotBeEmpty" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotBeEmpty" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotBeNull">
+      <topicdata group="api" />
+      <apidata name="NotBeNull" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotBeNull" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotBeNullOrEmpty">
+      <topicdata group="api" />
+      <apidata name="NotBeNullOrEmpty" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotBeNullOrEmpty" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotBeOfType``1(System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotBeOfType" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="strict" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotBeOfType__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotContain(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotContain" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotContain" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotContain" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotContain``1(``0,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotContain" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotContain" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.NotContain``1(``0,System.Boolean)" />
+        </parameter>
+        <parameter name="partial" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotContain__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotContainAll(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotContainAll" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAll" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotContainAll" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotContainAll" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAll" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.NotContainAll``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="partial" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotContainAll__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotContainAny(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotContainAny" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAny" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotContainAny" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotContainAny" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotContainAny" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.NotContainAny``1(System.Collections.Generic.IEnumerable{``0},System.Boolean)" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="partial" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotContainAny__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotEndWith(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotEndWith" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotEndWith" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotEqual" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotEqual" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotEqual" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotEqual" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotEqual" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotEqual_1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotEqual``1(``0)">
+      <topicdata group="api" />
+      <apidata name="NotEqual" group="member" subgroup="method" />
+      <memberdata visibility="public" overload="Overload:DotNetExtras.Testing.Assertions.Must.NotEqual" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="expected">
+          <template name="T" index="0" api="M:DotNetExtras.Testing.Assertions.Must.NotEqual``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotEqual__1" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotMatch(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotMatch" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotMatch" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.NotStartWith(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="NotStartWith" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_NotStartWith" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Must.StartWith(System.String,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="StartWith" group="member" subgroup="method" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="expected">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="ignoreCase" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Must_StartWith" />
+    </api>
+    <api id="T:DotNetExtras.Testing.Assertions.MustExtensions">
+      <topicdata group="api" />
+      <apidata name="MustExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="T_DotNetExtras_Testing_Assertions_MustExtensions" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Testing.Assertions.MustExtensions">
+      <topicdata name="MustExtensions" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Testing.Assertions.MustExtensions" />
+      <apidata name="MustExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Testing_Assertions_MustExtensions" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)">
+      <topicdata group="api" />
+      <apidata name="Must" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="value">
+          <type nullable="true" api="T:System.Object" ref="true" />
+        </parameter>
+        <parameter name="name" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions" />
+        <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Testing_Assertions_MustExtensions_Must" />
+    </api>
+    <api id="N:DotNetExtras.Testing.Assertions.Exceptions">
+      <topicdata group="api" />
+      <apidata name="DotNetExtras.Testing.Assertions.Exceptions" group="namespace" />
+      <elements>
+        <element api="T:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException" />
+        <element api="T:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException" />
+        <element api="T:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException" />
+      </elements>
+      <file name="N_DotNetExtras_Testing_Assertions_Exceptions" />
+    </api>
+    <api id="T:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException">
+      <topicdata group="api" />
+      <apidata name="AssertionDataTypeNotImplementedException" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.NotImplementedException" ref="true" />
+          <type api="T:System.SystemException" ref="true" />
+          <type api="T:System.Exception" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException.#ctor(System.Object,System.String,System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+      </containers>
+      <file name="T_DotNetExtras_Testing_Assertions_Exceptions_AssertionDataTypeNotImplementedException" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException">
+      <topicdata name="AssertionDataTypeNotImplementedException" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException" />
+      <apidata name="AssertionDataTypeNotImplementedException" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Testing_Assertions_Exceptions_AssertionDataTypeNotImplementedException" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException.#ctor(System.Object,System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <parameters>
+        <parameter name="parameter">
+          <type nullable="true" api="T:System.Object" ref="true" />
+        </parameter>
+        <parameter name="name" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+        <parameter name="method" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Exceptions.AssertionDataTypeNotImplementedException" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Exceptions_AssertionDataTypeNotImplementedException__ctor" />
+    </api>
+    <api id="T:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException">
+      <topicdata group="api" />
+      <apidata name="IncompatibleAssertionDataTypesException" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Exception" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException.#ctor(System.Object,System.Object,System.String,System.String,System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+      </containers>
+      <file name="T_DotNetExtras_Testing_Assertions_Exceptions_IncompatibleAssertionDataTypesException" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException">
+      <topicdata name="IncompatibleAssertionDataTypesException" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException" />
+      <apidata name="IncompatibleAssertionDataTypesException" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Testing_Assertions_Exceptions_IncompatibleAssertionDataTypesException" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException.#ctor(System.Object,System.Object,System.String,System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <parameters>
+        <parameter name="expected">
+          <type nullable="true" api="T:System.Object" ref="true" />
+        </parameter>
+        <parameter name="actual">
+          <type nullable="true" api="T:System.Object" ref="true" />
+        </parameter>
+        <parameter name="expectedName" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+        <parameter name="actualName" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+        <parameter name="method" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Exceptions.IncompatibleAssertionDataTypesException" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Exceptions_IncompatibleAssertionDataTypesException__ctor" />
+    </api>
+    <api id="T:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException">
+      <topicdata group="api" />
+      <apidata name="WrongAssertionForDataTypeException" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Exception" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+        <element api="M:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException.#ctor(System.Object,System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+      </containers>
+      <file name="T_DotNetExtras_Testing_Assertions_Exceptions_WrongAssertionForDataTypeException" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException">
+      <topicdata name="WrongAssertionForDataTypeException" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException" />
+      <apidata name="WrongAssertionForDataTypeException" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Testing.Assertions.MustExtensions.Must(System.Object,System.String)" source="extension">
+          <apidata name="Must" group="member" subgroup="method" subsubgroup="extension" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="name" optional="true">
+              <type api="T:System.String" ref="true" />
+              <argument>
+                <type api="T:System.Object" ref="true" />
+                <nullValue />
+              </argument>
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:DotNetExtras.Testing.Assertions.Must" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:DotNetExtras.Testing.Assertions" />
+            <type api="T:DotNetExtras.Testing.Assertions.MustExtensions" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Testing_Assertions_Exceptions_WrongAssertionForDataTypeException" />
+    </api>
+    <api id="M:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException.#ctor(System.Object,System.Collections.Generic.IEnumerable{System.String},System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <parameters>
+        <parameter name="parameter">
+          <type nullable="true" api="T:System.Object" ref="true" />
+        </parameter>
+        <parameter name="supportedAssertions">
+          <type api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+        <parameter name="name" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+        <parameter name="method" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <containers>
+        <library assembly="DotNetExtras.Testing" module="DotNetExtras.Testing" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.0" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+        <type api="T:DotNetExtras.Testing.Assertions.Exceptions.WrongAssertionForDataTypeException" ref="true" />
+      </containers>
+      <file name="M_DotNetExtras_Testing_Assertions_Exceptions_WrongAssertionForDataTypeException__ctor" />
+    </api>
+    <api id="R:Project_DotNetExtras.Testing.Help">
+      <topicdata group="root" />
+      <elements>
+        <element api="N:DotNetExtras.Testing.Assertions" />
+        <element api="N:DotNetExtras.Testing.Assertions.Exceptions" />
+      </elements>
+      <file name="R_Project_DotNetExtras_Testing_Help" />
+    </api>
+  </apis>
+</reflection>

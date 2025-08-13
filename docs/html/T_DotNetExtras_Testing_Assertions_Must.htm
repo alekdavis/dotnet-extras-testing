@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Must Class</title><meta name="Title" content="Must" /><meta name="Help.Id" content="T:DotNetExtras.Testing.Assertions.Must" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="DotNetExtras.Testing.Assertions" /><meta name="guid" content="T_DotNetExtras_Testing_Assertions_Must" /><meta name="Description" content="Implements fluent assertion methods that can be utilized by unit tests." /><meta name="tocFile" content="../toc/IDAB.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><img src="../icons/Help.png" /></div><div id="DocumentationTitle" class="level-item">DotNetExtras.Testing Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><div id="HeaderPrelimContainer" class="level my-1 px-2"><div id="PreliminaryContainer" class="level-left"><div class="level-item"><span class="tag is-warning is-medium">This is preliminary documentation and is subject to change.</span></div></div></div><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Must Class</h1><div class="summary">
+            Implements fluent assertion methods that can be utilized by unit tests.
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="N_DotNetExtras_Testing_Assertions.htm">DotNetExtras.Testing.Assertions</a><br /><strong>Assembly:</strong> DotNetExtras.Testing (in DotNetExtras.Testing.dll) Version: 1.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="keyword">class</span> <span class="identifier">Must</span></code></pre></div></div><dl class="inheritanceHierarchy"><dt>Inheritance</dt><dd><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  <span class="icon is-small"><i class="fa fa-arrow-right"></i></span>  <span class="selflink">Must</span></dd></dl></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Remarks</h2><div id="IDBCSection">
+            This class implements wrappers for the existing <a href="https://xunit.net/" target="_blank" rel="noopener noreferrer">xUnit</a> assertions
+            and provides additional methods not available in the xUnit assertion library.
+            </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example</h2><div id="IDCCSection"><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">user?.Must().NotBeNull();
+user?.Id?.Length?.Must().Equal(8);
+user?.Enabled?.Must().BeTrue();
+user?.Email?.Must().NotEndWith("example.com");
+user?.SocialAccounts?.Keys?.Must().NotBeNullOrEmpty().ContainAny(["github", "twitter", "facebook"]);</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Methods</h2><div id="IDBEASection"><table id="MethodList" class="table is-hoverable"><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeEmpty.htm">BeEmpty</a></td><td>
+            Asserts that the string or collection is empty.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeFalse.htm">BeFalse</a></td><td>
+            Asserts that the value is false.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeGreaterThan__1.htm">BeGreaterThan<span id="LSTC98A7251_0" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_1" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td>
+            Asserts that the value is greater than the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeGreaterThanOrEqual__1.htm">BeGreaterThanOrEqual<span id="LSTC98A7251_2" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_3" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td>
+            Asserts that the value is greater than or equal the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeLessThan__1.htm">BeLessThan<span id="LSTC98A7251_4" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_5" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td>
+            Asserts that the value is less than the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeLessThanOrEqual__1.htm">BeLessThanOrEqual<span id="LSTC98A7251_6" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_7" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td>
+            Asserts that the value is less than or equal the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeNull.htm">BeNull</a></td><td>
+            Asserts that the value is null.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeNullOrEmpty.htm">BeNullOrEmpty</a></td><td>
+            Asserts that the string or collection is null or empty.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeOfType__1.htm">BeOfType<span id="LSTC98A7251_8" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_9" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td>
+            Asserts that the value is of the specified type.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_BeTrue.htm">BeTrue</a></td><td>
+            Asserts that the value is true.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_Contain.htm">Contain(String, Boolean)</a></td><td>
+            Asserts that the expected string value exists in the actual string or collection of strings.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_Contain__1.htm">Contain<span id="LSTC98A7251_10" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_11" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(T, Boolean)</a></td><td>
+            Asserts that the expected value exists in a collection.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_ContainAll.htm">ContainAll(IEnumerable<span id="LSTC98A7251_12" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LSTC98A7251_13" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that all expected string values exist in a string or string collection.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_ContainAll__1.htm">ContainAll<span id="LSTC98A7251_14" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_15" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(IEnumerable<span id="LSTC98A7251_16" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_17" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that all expected values exist in a collection.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_ContainAny.htm">ContainAny(IEnumerable<span id="LSTC98A7251_18" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LSTC98A7251_19" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+            Asserts that at least one expected string value exists in a collection or string.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_ContainAny__1.htm">ContainAny<span id="LSTC98A7251_20" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_21" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(IEnumerable<span id="LSTC98A7251_22" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_23" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that at least one expected value exists in a collection. 
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_EndWith.htm">EndWith</a></td><td>
+            Asserts that the value ends with the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_Equal.htm">Equal(IEnumerable<span id="LSTC98A7251_24" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LSTC98A7251_25" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that the value is equal to the expected value.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_Equal_1.htm">Equal(String, Boolean)</a></td><td>
+            Asserts that the value is equal to the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_Equal__1.htm">Equal<span id="LSTC98A7251_26" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_27" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(T)</a></td><td>
+             Asserts that the value is equal to the expected value.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_Match.htm">Match</a></td><td>
+             Asserts that the actual string value matches the expected regular expression pattern.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotBeEmpty.htm">NotBeEmpty</a></td><td>
+             Asserts that the string or collection is not empty.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotBeNull.htm">NotBeNull</a></td><td>
+            Asserts that the value is null.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotBeNullOrEmpty.htm">NotBeNullOrEmpty</a></td><td>
+             Asserts that the string or collection is not null and not empty.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotBeOfType__1.htm">NotBeOfType<span id="LSTC98A7251_28" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_29" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span></a></td><td>
+             Asserts that the value is not of the specified type.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotContain.htm">NotContain(String, Boolean)</a></td><td>
+            Asserts that the expected string value does not exist in the actual string or collection of strings.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotContain__1.htm">NotContain<span id="LSTC98A7251_30" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_31" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(T, Boolean)</a></td><td>
+             Asserts that the expected value does not exist in a collection.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotContainAll.htm">NotContainAll(IEnumerable<span id="LSTC98A7251_32" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LSTC98A7251_33" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+            Asserts that all expected string values doe not exist in a collection or string.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotContainAll__1.htm">NotContainAll<span id="LSTC98A7251_34" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_35" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(IEnumerable<span id="LSTC98A7251_36" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_37" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that all expected values do not exist in a collection.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotContainAny.htm">NotContainAny(IEnumerable<span id="LSTC98A7251_38" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LSTC98A7251_39" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+            Asserts that at least one expected string does not exist in a collection of strings. 
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotContainAny__1.htm">NotContainAny<span id="LSTC98A7251_40" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_41" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(IEnumerable<span id="LSTC98A7251_42" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_43" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that at least one expected value does not exist in a collection. 
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotEndWith.htm">NotEndWith</a></td><td>
+             Asserts that the value does not end with the unexpected value.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotEqual.htm">NotEqual(IEnumerable<span id="LSTC98A7251_44" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>String<span id="LSTC98A7251_45" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>, Boolean)</a></td><td>
+             Asserts that the value is equal to the expected value.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotEqual_1.htm">NotEqual(String, Boolean)</a></td><td>
+            Asserts that the value is equal to the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotEqual__1.htm">NotEqual<span id="LSTC98A7251_46" data-languageSpecificText="cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=("></span>T<span id="LSTC98A7251_47" data-languageSpecificText="cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)"></span>(T)</a></td><td>
+            Asserts that the value is equal to the expected value.
+            </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotMatch.htm">NotMatch</a></td><td>
+             Asserts that the actual string value does not match the expected regular expression pattern.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_NotStartWith.htm">NotStartWith</a></td><td>
+             Asserts that the value does not start with the unexpected value.
+             </td></tr><tr><td><a href="M_DotNetExtras_Testing_Assertions_Must_StartWith.htm">StartWith</a></td><td>
+             Asserts that the value starts with the expected value.
+             </td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Extension Methods</h2><div id="IDAEASection"><table id="ExtensionList" class="table is-hoverable"><tr><td><a href="M_DotNetExtras_Testing_Assertions_MustExtensions_Must.htm">Must</a></td><td>
+            Starts the <a href="M_DotNetExtras_Testing_Assertions_MustExtensions_Must.htm">Must(Object, String)</a> assertion chain on the specified object, variable, or property.
+            <br />(Defined by <a href="T_DotNetExtras_Testing_Assertions_MustExtensions.htm">MustExtensions</a>)</td></tr></table></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="N_DotNetExtras_Testing_Assertions.htm">DotNetExtras.Testing.Assertions Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a></li><li><a class="quickLink">Remarks</a></li><li><a class="quickLink">Example</a></li><li><a class="quickLink">Methods</a></li><li><a class="quickLink">Extension Methods</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><a href="https://github.com/alekdavis/dotnet-extras-mail" target="_blank">Project repository</a><p>Copyright © 2025 Alek Davis</p> 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>

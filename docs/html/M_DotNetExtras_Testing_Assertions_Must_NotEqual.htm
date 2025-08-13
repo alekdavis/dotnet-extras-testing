@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html ><html lang="en-US"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" href="../css/bulma.css" /><link rel="stylesheet" href="../css/font-awesome.min.css" /><link rel="stylesheet" href="../css/presentationStyle.css" /><link rel="stylesheet" href="../css/vs.min.css" /><script src="../scripts/jquery-3.5.1.min.js"></script><script src="../scripts/clipboard.min.js"></script><script src="../scripts/highlight.min.js"></script><script src="../scripts/presentationStyle.js"></script><title>Must.NotEqual(IEnumerable&lt;String&gt;, Boolean) Method</title><meta name="Title" content="NotEqual(IEnumerable&lt;String&gt;, Boolean)" /><meta name="Help.Id" content="M:DotNetExtras.Testing.Assertions.Must.NotEqual(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" /><meta name="Help.ContentType" content="Reference" /><meta name="container" content="DotNetExtras.Testing.Assertions" /><meta name="guid" content="M_DotNetExtras_Testing_Assertions_Must_NotEqual" /><meta name="Description" content="Asserts that the value is equal to the expected value." /><meta name="tocFile" content="../toc/IDYAAAB.xml" /></head><body><div class="fixedLayout"><div id="Header" class="fixedHeader"><div class="pageHeader level mb-0 py-2 px-4"><div id="TitleContainer" class="level-left"><div class="level-item"><img src="../icons/Help.png" /></div><div id="DocumentationTitle" class="level-item">DotNetExtras.Testing Library Documentation</div></div><div id="LangFilterSearchContainer" class="level-right"><div class="level-item"><div class="dropdown is-hoverable"><div class="dropdown-trigger"><button class="button" aria-haspopup="true" aria-controls="dropdown-menu"><span id="CurrentLanguage"></span><span class="icon is-small"><i class="fa fa-angle-down" aria-hidden="true"></i></span></button></div><div class="dropdown-menu" role="menu"><div id="LanguageSelections" class="dropdown-content"><a class="dropdown-item languageFilterItem" data-languageId="cs">C#</a></div></div></div></div><div class="level-item"><form id="SearchForm" action="#" onsubmit="TransferToSearchPage(); return false;"><div class="field"><div class="control has-icons-left"><input id="SearchTerms" class="input" type="text" maxlength="200" placeholder="Search" /><span class="icon is-small is-left"><i class="fa fa-search"></i></span><button id="SearchButton" type="submit" class="is-hidden"></button></div></div></form></div></div></div></div><div class="fixedContent"><div id="HeaderPrelimContainer" class="level my-1 px-2"><div id="PreliminaryContainer" class="level-left"><div class="level-item"><span class="tag is-warning is-medium">This is preliminary documentation and is subject to change.</span></div></div></div><nav class="breadcrumb my-1 px-2 border-bottom" role="navigation"><ul id="TopicBreadcrumbs" /></nav><div id="ContentContainer" class="columns pl-5 pr-5 fixedContent"><div id="ShowHideTOCColumn" class="column is-hidden-tablet"><a id="ShowHideTOC">Show/Hide TOC</a></div><div id="TOCColumn" class="column is-hidden-mobile"><nav class="toc"><ul id="TableOfContents" class="toc-menu" /></nav></div><div id="Resizer" class="is-hidden"></div><div id="TopicContent" class="column content is-7"><h1>Must<span id="LSTF9EFFAEA_0" data-languageSpecificText="cpp=::|nu=."></span>Not<wbr />Equal(IEnumerable<span id="LSTF9EFFAEA_1" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span>String<span id="LSTF9EFFAEA_2" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span>, Boolean) Method</h1><div class="summary">
+             Asserts that the value is equal to the expected value.
+             </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Definition</h2><div id="IDBSection"><strong>Namespace:</strong> <a href="N_DotNetExtras_Testing_Assertions.htm">DotNetExtras.Testing.Assertions</a><br /><strong>Assembly:</strong> DotNetExtras.Testing (in DotNetExtras.Testing.dll) Version: 1.0.0<div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><span class="buttons"><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></span></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs"><span class="keyword">public</span> <span class="identifier">Must</span> <span class="identifier">NotEqual</span>(
+	<span class="identifier">IEnumerable</span>&lt;<span class="identifier">string</span>&gt;? <span class="parameter">expected</span>,
+	<span class="identifier">bool</span> <span class="parameter">ignoreCase</span> = <span class="keyword">false</span>
+)</code></pre></div></div><h4 class="quickLinkHeader">Parameters</h4><dl><dt class="has-text-weight-normal"><span class="parameter">expected</span>  <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" rel="noopener noreferrer">IEnumerable</a><span id="LSTF9EFFAEA_3" data-languageSpecificText="cpp=&lt;|cs=&lt;|fs=&lt;|vb=(Of |nu=("></span><a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a><span id="LSTF9EFFAEA_4" data-languageSpecificText="cpp=&gt;|cs=&gt;|fs=&gt;|vb=)|nu=)"></span></dt><dd>
+             Value expected not to equal the actual value.
+             </dd><dt class="has-text-weight-normal"><span class="parameter">ignoreCase</span>  <a href="https://learn.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener noreferrer">Boolean</a>  (Optional)</dt><dd>
+             Indicates whether to ignore case when comparing strings.
+             </dd></dl><h4 class="quickLinkHeader">Return Value</h4><a href="T_DotNetExtras_Testing_Assertions_Must.htm">Must</a><br />
+             The current <a href="T_DotNetExtras_Testing_Assertions_Must.htm">Must</a> instance.
+             </div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Example</h2><div id="IDECSection">
+             Check a string collection.
+             <div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">C#</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">string[] stringArray1 = ["abc", "def", "ghi"];
+string[] stringArray1A= ["abc", "def", "ghi"];
+string[] stringArray2 = ["abc", "123", "ghi"];
+string[] stringArray3 = ["ABC", "Def", "ghi"];
+
+stringArray1.Must().NotEqual(stringArray2, false);
+stringArray2.Must().NotEqual(stringArray1, false);
+stringArray1.Must().NotEqual(stringArray3, false);
+stringArray3.Must().NotEqual(stringArray1, false);
+
+string[]? stringNullArray = null;
+stringNullArray.Must().NotEqual(stringArray1, false);
+stringNullArray.Must().NotEqual(stringArray1, true);
+stringArray1.Must().NotEqual(stringNullArray, false);
+stringArray1.Must().NotEqual(stringNullArray, true);
+
+List&lt;string&gt; stringList1 = ["abc", "def", "ghi"];
+List&lt;string&gt; stringList1A= ["abc", "def", "ghi"];
+List&lt;string&gt; stringList2 = ["abc", "123", "ghi"];       
+List&lt;string&gt; stringList3 = ["ABC", "Def", "ghi"];
+
+stringList1.Must().NotEqual(stringList2, false);
+stringList2.Must().NotEqual(stringList1, false);
+stringList1.Must().NotEqual(stringList3, false);
+stringList3.Must().NotEqual(stringList1, false);
+
+List&lt;string&gt;? stringNullList = null;
+stringNullList.Must().NotEqual(stringList1, false);
+stringNullList.Must().NotEqual(stringList1, true);
+stringList1.Must().NotEqual(stringNullList, false);
+stringList1.Must().NotEqual(stringNullList, true);
+
+HashSet&lt;string&gt; stringHashSet1 = ["abc", "def", "ghi"];
+HashSet&lt;string&gt; stringHashSet1A = ["abc", "def", "ghi"];
+HashSet&lt;string&gt; stringHashSet2 = ["abc", "123", "ghi"];
+HashSet&lt;string&gt; stringHashSet3 = ["ABC", "Def", "ghi"];
+
+stringHashSet1.Must().NotEqual(stringHashSet2, false);
+stringHashSet2.Must().NotEqual(stringHashSet1, false);
+stringHashSet1.Must().NotEqual(stringHashSet3, false);
+stringHashSet3.Must().NotEqual(stringHashSet1, false);
+
+HashSet&lt;string&gt;? stringNullHashSet = null;
+stringNullHashSet.Must().NotEqual(stringHashSet1, false);
+stringNullHashSet.Must().NotEqual(stringHashSet1, true);
+stringList1.Must().NotEqual(stringNullHashSet, false);
+stringList1.Must().NotEqual(stringNullHashSet, true);
+
+Dictionary&lt;string, string&gt; stringDictionary1 = new()
+{
+    ["abc"] = "def",
+    ["ghi"] = "jkl",
+    ["mno"] = "pqr"
+};
+Dictionary&lt;string, string&gt; stringDictionary1A = new()
+{
+    ["abc"] = "def",
+    ["ghi"] = "jkl",
+    ["mno"] = "pqr"
+};
+
+Dictionary&lt;string, string&gt; stringDictionary2 = new()
+{
+    ["abc"] = "def",
+    ["123"] = "jkl",
+    ["mno"] = "pqr"
+};
+
+stringDictionary1.Must().NotEqual(stringDictionary2);
+stringDictionary2.Must().NotEqual(stringDictionary1);
+
+Dictionary&lt;string,string&gt;? stringNullDictionary= null;
+stringNullDictionary.Must().NotEqual(stringDictionary1);
+stringDictionary1.Must().NotEqual(stringNullDictionary);</code></pre></div></div></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Reference</h4><div><a href="T_DotNetExtras_Testing_Assertions_Must.htm">Must Class</a></div><div><a href="Overload_DotNetExtras_Testing_Assertions_Must_NotEqual.htm">NotEqual Overload</a></div><div><a href="N_DotNetExtras_Testing_Assertions.htm">DotNetExtras.Testing.Assertions Namespace</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Definition</a><ul class="menu"><li><a class="quickLink">Parameters</a></li><li><a class="quickLink">Return Value</a></li></ul></li><li><a class="quickLink">Example</a></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><a href="https://github.com/alekdavis/dotnet-extras-mail" target="_blank">Project repository</a><p>Copyright © 2025 Alek Davis</p> 
+				</div></div></footer></div><script>$(function(){
+SetDefaultLanguage("cs");
+LoadTocFile(null, null);
+InitializeQuickLinks();
+
+$(".toggleSection" ).click(function () {
+    SectionExpandCollapse(this);
+});
+
+$(".toggleSection").keypress(function () {
+    SectionExpandCollapseCheckKey(this, event)
+});
+hljs.highlightAll();
+});</script></body></html>
