@@ -14,12 +14,20 @@ user?.SocialAccounts?.Values?.Must().ContainAny(["github", "twitter", "facebook"
 ```
 
 ## Documentation
+
 For complete documentation, usage details, and code samples, see:
 
 - [Documentation](https://alekdavis.github.io/dotnet-extras-testing)
 - [Unit tests](https://github.com/alekdavis/dotnet-extras-testing/tree/main/TestingTests)
 
 ## Package
+
 Install the latest version of the `DotNetExtras.Testing` Nuget package from:
 
 - [https://www.nuget.org/packages/DotNetExtras.Testing](https://www.nuget.org/packages/DotNetExtras.Testing)
+
+## See also
+
+Check out other `DotNetExtras` libraries at:
+
+- [https://github.com/alekdavis/dotnet-extras](https://github.com/alekdavis/dotnet-extras)
