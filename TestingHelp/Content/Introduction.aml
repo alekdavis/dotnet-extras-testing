@@ -71,7 +71,7 @@
               </para>
               <code language="cs" title="Using the DotNetExtras.Testing assertions">
 <![CDATA[
-using DotNetExtras.TestingAssertions;
+using DotNetExtras.Testing.Assertions;
 ...
 user?.Must().NotBeNull();
 user?.Id?.Length?.Must().Equal(8);
