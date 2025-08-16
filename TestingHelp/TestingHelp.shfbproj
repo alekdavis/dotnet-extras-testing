@@ -54,7 +54,8 @@
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="DotNetExtras.Testing.Assertions" isDocumented="True">Provides wrapper classes for XUnit and custom assertions used for unit testing.</NamespaceSummaryItem>
-<NamespaceSummaryItem name="DotNetExtras.Testing.Assertions.Exceptions" isDocumented="True">Groups assertion-specific exceptions.</NamespaceSummaryItem></NamespaceSummaries>
+      <NamespaceSummaryItem name="DotNetExtras.Testing.Assertions.Exceptions" isDocumented="True">Groups assertion-specific exceptions.</NamespaceSummaryItem>
+    </NamespaceSummaries>
     <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
     <BinaryTOC>True</BinaryTOC>
     <IncludeFavorites>False</IncludeFavorites>
@@ -77,7 +78,8 @@
         </configuration>
       </PlugInConfig>
     </PlugInConfigurations>
-    <FooterText>&amp;lt%3ba href=&amp;quot%3bhttps://github.com/alekdavis/dotnet-extras-mail&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b&amp;gt%3bProject repository&amp;lt%3b/a&amp;gt%3b</FooterText>
+    <FooterText>
+    </FooterText>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

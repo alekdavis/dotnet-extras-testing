@@ -11,10 +11,103 @@
       </para>
     </introduction>
 
+    <section address="Overview">
+      <title>Overview</title>
+      <content>
+        <para>
+          The <legacyItalic>DotNetExtras.Testing</legacyItalic> library originated as an alternative to the <externalLink><linkText>FluentAssertions</linkText><linkUri>https://fluentassertions.com/</linkUri><linkTarget>_blank</linkTarget></externalLink>, after the latter <externalLink><linkText>switched to commercial licensing</linkText><linkUri>https://fluentassertions.com/releases/#800</linkUri><linkTarget>_blank</linkTarget></externalLink>. It is not as comprehensive, but the library covers the most common assertion cases.
+        </para>
+      </content>
+      
+      <sections>
+               
+        <section address="Implementation">
+          <title>Implementation</title>
+            <content>
+              <para>
+                <legacyItalic>DotNetExtras.Testing</legacyItalic> uses the 
+                <externalLink>
+                  <linkText>xUnit</linkText>
+                  <linkUri>https://xunit.net/</linkUri>
+                  <linkTarget>_blank</linkTarget>
+                </externalLink> assertion library and custom code to cover some cases not supported by xUnit. The list of supported assertions includes the following methods:
+              </para>
+              <list class="bullet">
+                <listItem><para><codeInline>BeEmpty</codeInline></para></listItem>
+                <listItem><para><codeInline>BeFalse</codeInline></para></listItem>
+                <listItem><para><codeInline>BeGreaterThan</codeInline></para></listItem>
+                <listItem><para><codeInline>BeGreaterThanOrEqual</codeInline></para></listItem>
+                <listItem><para><codeInline>BeNull</codeInline></para></listItem>
+                <listItem><para><codeInline>BeNullOrEmpty</codeInline></para></listItem>
+                <listItem><para><codeInline>BeOfType</codeInline></para></listItem>
+                <listItem><para><codeInline>BeTrue</codeInline></para></listItem>
+                <listItem><para><codeInline>Contain</codeInline></para></listItem>
+                <listItem><para><codeInline>ContainAll</codeInline></para></listItem>
+                <listItem><para><codeInline>ContainAny</codeInline></para></listItem>
+                <listItem><para><codeInline>EndWith</codeInline></para></listItem>
+                <listItem><para><codeInline>Equal</codeInline></para></listItem>
+                <listItem><para><codeInline>Match</codeInline></para></listItem>
+                <listItem><para><codeInline>NotBeEmpty</codeInline></para></listItem>
+                <listItem><para><codeInline>NotBeNull</codeInline></para></listItem>
+                <listItem><para><codeInline>NotBeNullOrEmpty</codeInline></para></listItem>
+                <listItem><para><codeInline>NotBeOfType</codeInline></para></listItem>
+                <listItem><para><codeInline>NotContain</codeInline></para></listItem>
+                <listItem><para><codeInline>NotContainAll</codeInline></para></listItem>
+                <listItem><para><codeInline>NotContainAny</codeInline></para></listItem>
+                <listItem><para><codeInline>NotEndWith</codeInline></para></listItem>
+                <listItem><para><codeInline>NotEqual</codeInline></para></listItem>
+                <listItem><para><codeInline>NotMatch</codeInline></para></listItem>
+                <listItem><para><codeInline>NotStartWith</codeInline></para></listItem>
+                <listItem><para><codeInline>StartWith</codeInline></para></listItem>
+              </list>
+            </content>
+        </section>
+        
+        <section address="Example">
+          <title>Example</title>
+            <content>
+              <para>
+               The following examples illustrate how to use the <legacyItalic>DotNetExtras.Testing</legacyItalic> assertions:
+              </para>
+              <code language="cs" title="Using the DotNetExtras.Testing assertions">
+<![CDATA[
+using DotNetExtras.TestingAssertions;
+...
+user?.Must().NotBeNull();
+user?.Id?.Length?.Must().Equal(8);
+user?.Enabled?.Must().BeTrue();
+user?.Email?.Must().NotEndWith("@example.com");
+user?.SocialAccounts?.Keys?.Must().NotBeNullOrEmpty();
+user?.SocialAccounts?.Values?.Must().ContainAny(["github", "twitter", "facebook"]);
+"Hello, world!".Must().Match("^HELLO", true);
+new int[] intArray = [100, 200, 300];
+intArray.Must().NotContainAny([400, 500]);
+]]>
+              </code>
+              <para>             
+                For the complete example and other samples covering additional scenarios, see the source code (and read the comments) of the 
+                <externalLink>
+                  <linkText>unit test project</linkText>
+                  <linkUri>https://github.com/alekdavis/dotnet-extras-testing/tree/main/TestingTests</linkUri>
+                  <linkTarget>_blank</linkTarget>
+                </externalLink>.
+              </para>
+            </content>
+        </section>
+    
+      </sections>     
+    </section>    
+
     <relatedTopics>
       <externalLink>
-        <linkText>DotNetExtras.Testing Nuget package</linkText>
+        <linkText>DotNetExtras.Testing NuGet package</linkText>
         <linkUri>https://www.nuget.org/packages/DotNetExtras.Testing</linkUri>
+        <linkTarget>_blank</linkTarget>
+      </externalLink>
+      <externalLink>
+        <linkText>DotNetExtras.Testing project repository</linkText>
+        <linkUri>https://github.com/alekdavis/dotnet-extras-testing</linkUri>
+        <linkTarget>_blank</linkTarget>
       </externalLink>
     </relatedTopics>
   </developerConceptualDocument>
