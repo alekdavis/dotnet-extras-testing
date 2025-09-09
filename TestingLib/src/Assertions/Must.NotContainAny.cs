@@ -21,6 +21,9 @@ public partial class Must
     /// indicates whether the missing or null properties in the expected value 
     /// must be ignored in the actual value.
     /// </param>
+    /// <param name="includeNonPublic">
+    /// If <c>true</c>, non-public properties and fields will be checked along with the public properties and fields.
+    /// </param>
     /// <returns>
     /// The current <see cref="Must"/> instance.
     /// </returns>
@@ -103,7 +106,8 @@ public partial class Must
     public Must NotContainAny<T>
     (
         IEnumerable<T>? expected,
-        bool partial = false
+        bool partial = false,
+        bool includeNonPublic = false
     )
     {
         if (_actual == null || expected == null || !expected.Any())
@@ -125,7 +129,14 @@ public partial class Must
 
             foreach (T expectedItem in expected)
             {
-                Assert.DoesNotContain(actualList, item => expectedItem.IsEquivalentTo(item, partial));
+                if (partial)
+                {
+                    Assert.DoesNotContain(actualList, item => expectedItem.IsPartialEquivalentTo(item, includeNonPublic));
+                }
+                else
+                {
+                    Assert.DoesNotContain(actualList, item => expectedItem.IsEquivalentTo(item, includeNonPublic));
+                }
             }
         }
         else

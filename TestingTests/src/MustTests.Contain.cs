@@ -11,7 +11,7 @@ public partial class MustTests
     {
         string helloMyWorldString = "Hello, my world!";
 
-        helloMyWorldString.Must().Contain("my");
+        helloMyWorldString.Must().Contain<string>("my");
         helloMyWorldString.Must().Contain("my", false);
         helloMyWorldString.Must().Contain("My", true);
         helloMyWorldString.Must().Contain("MY", true);

@@ -1,6 +1,4 @@
-﻿using DotNetExtras.Common;
-using DotNetExtras.Common.Extensions;
-using DotNetExtras.Common.Extensions.Specialized;
+﻿using DotNetExtras.Common.Extensions;
 using DotNetExtras.Common.Json;
 using DotNetExtras.Testing.Assertions.Exceptions;
 using Xunit;
@@ -23,6 +21,9 @@ public partial class Must
     /// For complex types, 
     /// indicates whether the missing or null properties in the expected value 
     /// must be ignored in the actual value.
+    /// </param>
+    /// <param name="includeNonPublic">
+    /// If <c>true</c>, non-public properties and fields will be checked along with the public properties and fields.
     /// </param>
     /// <returns>
     /// The current <see cref="Must"/> instance.
@@ -77,7 +78,8 @@ public partial class Must
     public Must ContainAny<T>
     (
         IEnumerable<T>? expected,
-        bool partial = false
+        bool partial = false,
+        bool includeNonPublic = false
     )
     {
         if (expected == null || !expected.Any())
@@ -98,7 +100,15 @@ public partial class Must
             {
                 try
                 {
-                    Assert.Contains(actualList, item => expectedItem.IsEquivalentTo(item, partial));
+                    if (partial)
+                    {
+                        Assert.Contains(actualList, item => expectedItem.IsPartialEquivalentTo(item, includeNonPublic));
+                    }
+                    else
+                    {
+                        Assert.Contains(actualList, item => expectedItem.IsEquivalentTo(item, includeNonPublic));
+                    }
+
                     return this;
                 }
                 catch (ContainsException)
