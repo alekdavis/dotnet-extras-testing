@@ -81,11 +81,11 @@ public partial class Must
             {
                 if (partial)
                 {
-                    Assert.Contains(actualList, item => expectedItem.IsPartialEquivalentTo(item, includeNonPublic));
+                    Assert.Contains(actualList, item => expectedItem.IsPartialEquivalentOf(item, includeNonPublic));
                 }
                 else
                 {
-                    Assert.Contains(actualList, item => expectedItem.IsEquivalentTo(item, includeNonPublic));
+                    Assert.Contains(actualList, item => expectedItem.IsEquivalentOf(item, includeNonPublic));
                 }
             }
         }
