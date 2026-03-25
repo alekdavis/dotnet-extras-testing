@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>DotNetExtras.Testing</AssemblyName>
     <RootNamespace>DotNetExtras.Testing</RootNamespace>
-    <Version>1.1.1</Version>
+    <Version>1.1.2</Version>
     <Title>$(AssemblyName)</Title>
     <Authors>Alek Davis</Authors>
     <Description>A .NET Core library implementing helper functions for unit testing and validation based on xUnit.</Description>
